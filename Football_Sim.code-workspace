@@ -1,0 +1,589 @@
+{
+	"folders": [
+		{
+			"name": "Football_Sim",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "D:\\UE\\5.4"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Football_Sim Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Football_Sim",
+					"Win64",
+					"Debug",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_Sim Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Football_Sim",
+					"Win64",
+					"Debug",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Football_Sim Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_Sim Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Football_Sim",
+					"Win64",
+					"Debug",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_Sim Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Football_Sim",
+					"Win64",
+					"DebugGame",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_Sim Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Football_Sim",
+					"Win64",
+					"DebugGame",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Football_Sim Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_Sim Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Football_Sim",
+					"Win64",
+					"DebugGame",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_Sim Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Football_Sim",
+					"Win64",
+					"Development",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_Sim Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Football_Sim",
+					"Win64",
+					"Development",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Football_Sim Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_Sim Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Football_Sim",
+					"Win64",
+					"Development",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_Sim Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Football_Sim",
+					"Win64",
+					"Test",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_Sim Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Football_Sim",
+					"Win64",
+					"Test",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Football_Sim Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_Sim Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Football_Sim",
+					"Win64",
+					"Test",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_Sim Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Football_Sim",
+					"Win64",
+					"Shipping",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_Sim Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Football_Sim",
+					"Win64",
+					"Shipping",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Football_Sim Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_Sim Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Football_Sim",
+					"Win64",
+					"Shipping",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_SimEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Football_SimEditor",
+					"Win64",
+					"Debug",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_SimEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Football_SimEditor",
+					"Win64",
+					"Debug",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Football_SimEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_SimEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Football_SimEditor",
+					"Win64",
+					"Debug",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_SimEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Football_SimEditor",
+					"Win64",
+					"DebugGame",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_SimEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Football_SimEditor",
+					"Win64",
+					"DebugGame",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Football_SimEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_SimEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Football_SimEditor",
+					"Win64",
+					"DebugGame",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_SimEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Football_SimEditor",
+					"Win64",
+					"Development",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_SimEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Football_SimEditor",
+					"Win64",
+					"Development",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Football_SimEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			},
+			{
+				"label": "Football_SimEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Football_SimEditor",
+					"Win64",
+					"Development",
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\UE\\5.4"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch Football_Sim (Debug)",
+				"request": "launch",
+				"program": "E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Binaries\\Win64\\Football_Sim-Win64-Debug.exe",
+				"preLaunchTask": "Football_Sim Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "D:\\UE\\5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\UE\\5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch Football_Sim (DebugGame)",
+				"request": "launch",
+				"program": "E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Binaries\\Win64\\Football_Sim-Win64-DebugGame.exe",
+				"preLaunchTask": "Football_Sim Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "D:\\UE\\5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\UE\\5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch Football_Sim (Development)",
+				"request": "launch",
+				"program": "E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Binaries\\Win64\\Football_Sim.exe",
+				"preLaunchTask": "Football_Sim Win64 Development Build",
+				"args": [
+				],
+				"cwd": "D:\\UE\\5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\UE\\5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch Football_Sim (Test)",
+				"request": "launch",
+				"program": "E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Binaries\\Win64\\Football_Sim-Win64-Test.exe",
+				"preLaunchTask": "Football_Sim Win64 Test Build",
+				"args": [
+				],
+				"cwd": "D:\\UE\\5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\UE\\5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch Football_Sim (Shipping)",
+				"request": "launch",
+				"program": "E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Binaries\\Win64\\Football_Sim-Win64-Shipping.exe",
+				"preLaunchTask": "Football_Sim Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "D:\\UE\\5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\UE\\5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch Football_SimEditor (Debug)",
+				"request": "launch",
+				"program": "D:\\UE\\5.4\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "Football_SimEditor Win64 Debug Build",
+				"args": [
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject"
+				],
+				"cwd": "D:\\UE\\5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\UE\\5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch Football_SimEditor (DebugGame)",
+				"request": "launch",
+				"program": "D:\\UE\\5.4\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "Football_SimEditor Win64 DebugGame Build",
+				"args": [
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject"
+				],
+				"cwd": "D:\\UE\\5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\UE\\5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch Football_SimEditor (Development)",
+				"request": "launch",
+				"program": "D:\\UE\\5.4\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "Football_SimEditor Win64 Development Build",
+				"args": [
+					"E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject"
+				],
+				"cwd": "D:\\UE\\5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\UE\\5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "D:\\UE\\5.4\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=E:\\Jobert\\FootballSim\\latest\\Football_Sim_V1\\Football_Sim.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "integratedTerminal",
+				"stopAtEntry": false,
+				"cwd": "D:\\UE\\5.4"
+			}
+		]
+	}
+}
